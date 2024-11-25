@@ -94,9 +94,7 @@ function waitAndRun ({ start, url, runFn, namedArguments }) {
       verbose: isDebug(),
       strictSSL: !isInsecure(),
       log: isDebug(),
-      headers: {
-        Accept: 'text/html, application/json, text/plain, */*'
-      },
+      headers: {},
       validateStatus
     }
     debug('wait-on options %o', options)
